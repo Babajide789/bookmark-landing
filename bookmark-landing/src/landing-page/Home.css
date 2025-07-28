@@ -1,0 +1,236 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #2d314d;
+}
+
+/* Home Panel Wrapper */
+.home-panel {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 0;
+}
+
+/* Top Section */
+.top-panel .leftXright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.left {
+  flex: 1;
+  max-width: 550px;
+}
+
+.left-header h4 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.left-para p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.left .buttons {
+  display: flex;
+  gap: 15px;
+  
+}
+
+.getitONchrome,
+.getitONfirefox {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+}
+
+.getitONchrome:hover,
+.getitONfirefox:hover {
+  background-color: hsl(231, 69%, 50%);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.getitONchrome:active,
+.getitONfirefox:active {
+  background-color: hsl(231, 69%, 45%);
+  transform: translateY(1px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.right img {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Features Panel */
+.features-panel {
+  text-align: center;
+  margin: 100px 0 60px;
+}
+
+.features-header h4 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.features-paragraph p {
+  font-size: 1rem;
+  color: #666;
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* Download Extension Panel */
+.download-extension-panel {
+  text-align: center;
+  margin: 100px 0 60px;
+}
+
+.DEP-header h4 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.DEP-paragraph p {
+  font-size: 1rem;
+  color: #666;
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.6;
+
+  margin-bottom: -85px;
+}
+
+/* FAQ Section */
+.FAQ {
+  margin: 100px 0 60px;
+  text-align: center;
+  
+}
+
+.FAQ-head h4 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.FAQ-para p {
+  font-size: 1rem;
+  color: #666;
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* Fly Banner Panel */
+.fly-banner-panel {
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  margin: -30px 0 0px; /* reduced bottom margin */
+  width: 100%;
+}
+
+
+.banner-top p {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.banner-follow-up p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+
+.input-email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.input-email input {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  font-size: 1rem;
+  width: 250px;
+}
+
+.input-email button {
+  padding: 10px 25px;
+  border-radius: 20px;
+  background-color: hsl(0, 94%, 66%);
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.input-email button:hover {
+  background-color: hsl(0, 94%, 56%);
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .top-panel .leftXright {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .left {
+    max-width: 100%;
+  }
+
+  .right img {
+    max-width: 100%;
+  }
+
+  .input-email {
+    flex-direction: column;
+  }
+
+  .input-email input {
+    width: 100%;
+    max-width: 300px;
+  }
+}

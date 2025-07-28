@@ -1,0 +1,66 @@
+/* .MUI-CARD {
+  margin-top: 2rem;
+}
+
+.browser-logo {
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.version-text {
+  display: block;
+  margin: 10px 0;
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.btn-install {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-install:hover {
+  background-color: hsl(231, 69%, 50%);
+} */
+
+
+/* Make all cards square with balanced padding */
+.MUI-CARD .MuiCard-root {
+  aspect-ratio: 1 / 1; /* Ensures height = width */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 305px;
+}
+
+/* Prevent button text from wrapping */
+.btn-install {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  background-color: hsl(231, 69%, 60%);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  width: 100%; /* optional: full width of card */
+  font-size: 0.675rem; /* adjust as needed */
+
+  margin-top: 10px;
+}
+
+.btn-install:hover {
+  background-color: hsl(231, 50%, 50%);
+}
+

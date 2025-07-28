@@ -1,0 +1,121 @@
+.tab-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 140px;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+/* IMAGE */
+.tab-image img {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* TEXT */
+.tab-text {
+  max-width: 500px;
+}
+
+.tab-text h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2d314d;
+}
+
+.tab-text p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.tab-text button {
+  padding: 10px 20px;
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.tab-text button:hover {
+  background-color: hsl(231, 69%, 50%);
+}
+
+/* SELECTED TAB TEXT COLOR */
+.MuiTab-root.Mui-selected {
+  color: black !important;
+}
+
+
+/* ✅ MOBILE RESPONSIVE STYLES */
+@media (max-width: 768px) {
+  .tab-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .tab-image img {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .tab-text {
+    max-width: 100%;
+  }
+
+  .tab-text h4 {
+    font-size: 1.3rem;
+  }
+
+  .tab-text p {
+    font-size: 0.95rem;
+  }
+
+  .tab-text button {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  
+
+   .MUI-tab .MuiTabs-flexContainer {
+    flex-direction: column !important;
+    align-items: stretch;
+  }
+
+  .MUI-tab .MuiTab-root {
+    justify-content: center;
+    text-align: center;
+    padding: 12px 16px;
+    font-weight: 500;
+    color: #333;
+  }
+
+  .MUI-tab .tab-label {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 6px;
+  }
+
+  .MUI-tab .Mui-selected .tab-label::after {
+    content: "";
+    display: block;
+    width: 100%; /* adjust this to control the line length */
+    height: 4px;
+    background-color: hsl(0, 94%, 66%);
+    margin: 6px auto 0 auto;
+    border-radius: 2px;
+  }
+
+  .MUI-tab .MuiTabs-indicator {
+    display: none; /* Hide default underline */
+  }
+}
