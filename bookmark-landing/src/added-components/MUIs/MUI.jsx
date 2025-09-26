@@ -36,8 +36,6 @@ const MUI = () => {
 
   return (
     <div className="home-panel">
-      {/* … top and features sections above unchanged … */}
-
       {/* MUI Tab Section */}
       <div className="MUI-tab smooth-fade">
         <Box>
@@ -60,7 +58,7 @@ const MUI = () => {
 
       {/* Download Extension Panel */}
       <div className="download-extension-panel smooth-fade">
-        {/* … header and paragraph … */}
+        {/* HEADER AND PARAGRAPH */}
         <div className="MUI-CARD">
           <Box display="flex" gap={2} justifyContent="center" flexWrap="wrap">
             {[{ChromeSVG}, {FireFoxSVG}, {OperaSVG}].map((br, i) => (
@@ -91,8 +89,6 @@ const MUI = () => {
           ))}
         </div>
       </div>
-
-      {/* Banner and form unchanged … */}
     </div>
   );
 };

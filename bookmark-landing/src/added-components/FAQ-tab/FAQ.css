@@ -1,5 +1,4 @@
 /* FAQ.css */
-
 .FAQ-smooth-fade {
   display: flex;
   flex-direction: column;
@@ -51,11 +50,6 @@
 
   
 }
-
-/* .FAQ-smooth-fade button:hover {
-  background-color: hsl(231, 69%, 50%);
-} */
-
 
 .infoButton {
   background-color: hsl(231, 69%, 60%);

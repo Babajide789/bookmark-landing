@@ -43,7 +43,7 @@ const Extensions = () => {
                   width: 220,
                   textAlign: "center",
                   padding: 2,
-                  marginTop: "40px", // ✅ equal spacing handled by CSS or Box gap
+                  marginTop: "40px",
                   boxShadow: 6,
                 }}
             >

@@ -108,7 +108,7 @@
   .MUI-tab .Mui-selected .tab-label::after {
     content: "";
     display: block;
-    width: 100%; /* adjust this to control the line length */
+    width: 100%;
     height: 4px;
     background-color: hsl(0, 94%, 66%);
     margin: 6px auto 0 auto;
@@ -116,6 +116,6 @@
   }
 
   .MUI-tab .MuiTabs-indicator {
-    display: none; /* Hide default underline */
+    display: none;
   }
 }
